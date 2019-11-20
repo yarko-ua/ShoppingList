@@ -1,0 +1,120 @@
+body {
+    font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+    color: #ece9e9;
+    font-size: 20px;
+    padding: 10px;
+}
+
+header {
+    border: 20px solid #4a4f56;
+}
+
+h1 {
+    margin-bottom: 5px;
+    margin-top: 1px;
+    font-size: 34px; 
+}
+
+header, .appetit {
+        background-color: #4a4f56;
+        color: #eb7e7f;
+        text-align: center;
+}
+
+section {
+        background-color: #3b3f45;
+        height: 825px;
+        min-height: 250px;
+        border: 1px solid #3b3f45;
+        
+}
+
+section > div, section > div + div {
+      width:60%;
+      margin: 0 auto;
+}
+
+.List{
+    margin-top: 140px;
+}
+
+ul {
+    padding-left: 0px;
+    list-style-type: none;
+    
+}
+
+li:nth-child(2n+1) label {
+        background-color: #88839e;
+}
+
+label {
+    display: flex;
+    height: 55px;
+    background-color: #7a7593;
+    align-items: center;
+}
+
+li label:hover{
+        background-color: #635e7a;
+        border-bottom: 3px solid white;
+        border-top: 3px solid white;
+} 
+
+li label:active {
+    background-color: #972a2c;
+}
+
+[type="checkbox"]:checked + p{
+        color: #a3a0b5;
+        text-decoration: line-through;
+}
+
+p.pickles:after {
+    font-size: smaller;
+    content: " (for the next lessons about CSS)";
+    color: #b5b2c7;
+}
+p.apples:after {
+    font-size: smaller;
+    content: " (for more CSS manipulations)";
+    color: #b5b2c7;
+}
+p.oranges:after {
+    font-size: smaller;
+    content: " (because they are awesome)";
+    color: #b5b2c7;
+}
+p.plates:after {
+    font-size: smaller;
+    content: " (hm... they always disappear)";
+    color: #b5b2c7;
+}
+p.sake:after {
+    font-size: smaller;
+    content: " (for my friends)";
+    color: #b5b2c7;
+}
+
+.appetit {
+    height: 55px;
+    margin-top: 55px;
+    }
+    
+.appetit p {
+padding-top:13px;
+}
+
+input[type="checkbox"] {
+    width: 40px;
+    transform: scale(1.7);
+}
+
+li label:active, [type="checkbox"]:checked + p {
+transition: all .1s ease-in;
+}
+
+
+
+
+
