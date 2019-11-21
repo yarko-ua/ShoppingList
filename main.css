@@ -3,6 +3,7 @@ body {
     color: #ece9e9;
     font-size: 20px;
     padding: 10px;
+
 }
 
 header {
@@ -30,12 +31,13 @@ section {
 }
 
 section > div, section > div + div {
-      width:60%;
+      width:50%;
       margin: 0 auto;
 }
 
 .List{
     margin-top: 140px;
+    margin-bottom: 55px;
 }
 
 ul {
@@ -50,15 +52,16 @@ li:nth-child(2n+1) label {
 
 label {
     display: flex;
-    height: 55px;
+    height: 65px;
     background-color: #7a7593;
     align-items: center;
+    cursor: pointer;
 }
 
 li label:hover{
         background-color: #635e7a;
         border-bottom: 3px solid white;
-        border-top: 3px solid white;
+        border-top: 3px solid white;             
 } 
 
 li label:active {
@@ -70,27 +73,36 @@ li label:active {
         text-decoration: line-through;
 }
 
-p.pickles:after {
+
+[type="checkbox"]:checked {
+    transform-origin: center;
+    transform: rotate(360deg);
+    transition: all .5s ease-in;
+
+}
+
+
+.pickles:after {
     font-size: smaller;
     content: " (for the next lessons about CSS)";
     color: #b5b2c7;
 }
-p.apples:after {
+.apples:after {
     font-size: smaller;
     content: " (for more CSS manipulations)";
     color: #b5b2c7;
 }
-p.oranges:after {
+.oranges:after {
     font-size: smaller;
     content: " (because they are awesome)";
     color: #b5b2c7;
 }
-p.plates:after {
+.plates:after {
     font-size: smaller;
     content: " (hm... they always disappear)";
     color: #b5b2c7;
 }
-p.sake:after {
+.sake:after {
     font-size: smaller;
     content: " (for my friends)";
     color: #b5b2c7;
@@ -98,16 +110,16 @@ p.sake:after {
 
 .appetit {
     height: 55px;
-    margin-top: 55px;
-    }
+}
     
 .appetit p {
-padding-top:13px;
+padding-top: 15px;
+
 }
 
 input[type="checkbox"] {
-    width: 40px;
-    transform: scale(1.7);
+    width: 50px;
+    height: 25px;
 }
 
 li label:active, [type="checkbox"]:checked + p {
